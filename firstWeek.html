@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahdia Noori – Personal Web Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* CSS Variables */
+    :root {
+      --main-color: #e8c38c;
+      --accent-color: #f49d6e;
+      --font: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: blanchedalmond;
+      font-family: var(--font);
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      background-color: var(--main-color);
+      padding: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav ul {
+      padding: 0;
+    }
+
+    nav ul li {
+      list-style: none;
+      display: inline-block;
+      margin-right: 1em;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: black;
+    }
+
+    nav ul li a:hover {
+      color: var(--accent-color);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 5vw;
+    }
+
+    figure img {
+      border-radius: 20px;
+      max-width: 90%;
+      display: block;
+      margin: 0 auto;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    figcaption {
+      text-align: center;
+      font-size: 0.9rem;
+      font-style: italic;
+    }
+
+    ul li:nth-child(odd) {
+      background-color: rgba(255, 228, 181, 0.5);
+    }
+
+    ol li:last-child {
+      font-weight: bold;
+    }
+
+    .goals {
+      position: relative;
+      left: 5%;
+    }
+
+    .fun-facts {
+      background-color: #f4e1c5;
+      padding: 1em;
+      margin: 1em 0;
+    }
+    .link{
+      list-style-type: none;
+      padding: 1em;
+      margin: 1em 0;
+    }
+
+    a:hover, input:focus {
+      outline: 2px solid var(--accent-color);
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    table {
+      margin: 1em auto;
+      width: 90%;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+      border-collapse: collapse;
+      padding: 10px;
+    }
+
+    form {
+      width: 80%;
+      margin: 2em auto;
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: var(--main-color);
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: var(--main-color);
+      text-align: center;
+      padding: 1em;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 600px;
+      height: 315px;
+      display: block;
+      margin: 1em auto;
+      border-radius: 12px;
+    }
+
+    @media (max-width: 768px) {
+      nav ul li {
+        display: block;
+        margin: 0.5em 0;
+      }
+      h1 {
+        font-size: 8vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#" target="_blank">Contact</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <h1>Mahdia Noori</h1>
+  <p style="text-align: center;">I am an Afghan girl passionate about becoming a full-stack developer.</p>
+
+  <figure>
+    <img src="https://emerging-europe.com/wp-content/uploads/2022/10/bigstock-woman-programmer-girl-coding-461597809-1024x683.jpg" alt="Coding Woman">
+    <figcaption>I code to make a bright future</figcaption>
+  </figure>
+
+  <h2>Books I Love</h2>
+  <ul>
+    <li>A Thousand Splendid Suns</li>
+    <li>The Alchemist</li>
+    <li>Castro</li>
+  </ul>
+
+  <h2>My Goals</h2>
+  <ol class="goals">
+    <li>Become a Full Stack Developer</li>
+    <li>Complete my Bachelor's in Software Engineering</li>
+    <li>Work in a top tech company</li>
+  </ol>
+
+  <div class="fun-facts">
+    <h3>Fun Fact</h3>
+    <p>To calm down when I am anxious, dancing helps me a lot.</p>
+  </div>
+  <div class="link">
+  <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li></div>
+
+  <h3>Watch My Favorite Programming Inspiration Video</h3>
+  <iframe src="https://www.youtube.com/" title="Inspiration" allowfullscreen></iframe>
+
+  <table>
+    <caption>BootCamp Schedule</caption>
+    <tr><th>Day</th><th>Time</th></tr>
+    <tr><td>Saturday, August 2, 2025</td><td>6:30 PM</td></tr>
+    <tr><td>Saturday, August 8, 2025</td><td>6:30 PM</td></tr>
+  </table>
+
+  <form>
+    <div style="font-weight: bold;">Contact Me</div><br>
+    <label for="name">Name:</label>
+    <input type="text" id="name" /><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" /><br><br>
+    <input type="submit" value="Submit" />
+  </form>
+
+  <footer>Mahdia Noori © 2025</footer>
+</body>
+</html>
